@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Opencart test suit]">
+  <parameter name="browser" value="edge"/>
+  <test thread-count="2" parallel="tests" name="chrometest(failed)">
+    <classes>
+      <class name="testCases.TC001_AccountRegistration">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testAccountRegister"/>
+        </methods>
+      </class> <!-- testCases.TC001_AccountRegistration -->
+    </classes>
+  </test> <!-- chrometest(failed) -->
+</suite> <!-- Failed suite [Opencart test suit] -->
